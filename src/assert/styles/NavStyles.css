@@ -1,0 +1,31 @@
+
+
+.nav_entire {
+  background: #242119 !important;
+  margin: 10px;
+  width: 98% !important;
+  border-radius: 15px;
+}
+
+.tabs_btn {
+  margin: 10px !important;
+}
+
+.ft_color {
+  color: white !important;
+  margin: 15px !important;
+  display: inline-block !important;
+  text-transform: capitalize !important;
+  font-family: "PROXONRegular !important";
+  font-size: medium !important;
+}
+
+.ft_bor {
+  border: 1px solid #02b8e4 !important;
+  border-radius: 80px !important;
+  background: #ffffff !important;
+  color: #02b8e4 !important;
+  padding: 10px !important;
+  margin-left: 100% !important;
+  cursor: pointer;
+}

@@ -1,0 +1,50 @@
+body {
+  background: black !important;
+}
+.Welcome_to_the_open_metaverse {
+  font-size: 18px;
+  font-family: "PROXONRegular";
+  color: rgb(253, 253, 251);
+  text-transform: uppercase;
+  line-height: 2.189;
+  position: absolute;
+  margin: 2%;
+  margin-left: 10%;
+
+  /* z-index: 70; */
+}
+.Wel_Lo {
+  margin-top: 15%;
+  margin-left: 28%;
+}
+
+.Neque_porro_quisquam_est_qui_dolor_em_ipsum_qui {
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-style: italic;
+  /* line-height: 1.2; */
+  position: absolute;
+
+  margin-left: 8%;
+  text-align: left;
+}
+
+.ft_color {
+  color: white !important;
+  /* margin: 15px !important; */
+  display: inline-block !important;
+  text-transform: capitalize !important;
+  font-family: "PROXONRegular !important";
+  font-size: medium !important;
+}
+
+.ft_bor {
+  border: 1px solid #02b8e4 !important;
+  border-radius: 80px !important;
+  background: #ffffff !important;
+  color: #02b8e4 !important;
+  padding: 10px 60px !important;
+  /* margin-left: 200% !important; */
+  cursor: pointer;
+}
