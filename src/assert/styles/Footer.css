@@ -1,0 +1,32 @@
+/* .text_jk {
+  margin-left: 20%;
+} */
+
+.Pages {
+  font-size: 36.667px !important;
+  font-family: "PROXONRegular" !important;
+  color: #ffffff;
+}
+
+
+.text_jk {
+  font-size: 20px !important;
+  font-family: "Montserrat" !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+
+.align {
+  text-align: left;
+}
+
+
+.under_jm {
+  display: inline-block !important;
+  cursor: pointer;
+}
+
+
+.copy_k {
+  margin-top: 50% !important;
+}
