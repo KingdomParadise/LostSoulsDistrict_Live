@@ -91,7 +91,15 @@ const Footer = () => {
           </Grid>
         </Grid>
 
-        <Grid item md={12} style={{ marginTop: "40px" }}>
+        <Grid
+          item
+          md={12}
+          style={{
+            marginTop: "60px",
+            background: "black",
+            padding: "10px",
+          }}
+        >
           <Typography variant="caption">
             Copyright © 2022.All Rights Reserved By Lost Soul District
           </Typography>

@@ -5,8 +5,8 @@ import MainBody from "./MainBody";
 const Home = () => {
   return (
     <>
-      <NavBar />
-      <MainBody />
+      <NavBar defer />
+      <MainBody defer />
     </>
   );
 };

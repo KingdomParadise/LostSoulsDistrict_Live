@@ -19,10 +19,23 @@ import one from "../../assert/images/mainbody/1.png";
 import two from "../../assert/images/mainbody/2.png";
 import three from "../../assert/images/mainbody/3.png";
 import charCard from "../../assert/images/mainbody/charcterCard.png";
+import yop from "../../assert/images/mainbody/yop.png";
+import Banner from "../../assert/images/mainbody/bb.png";
+import Girl from "../../assert/images/mainbody/gg.png";
+import Foot from "../../assert/images/mainbody/footerbg.png";
+import FootAbove from "../../assert/images/mainbody/footum.png";
+
 const MainBody = () => {
   return (
     <>
-      <Grid container direction="row" style={{ marginBottom: "100px" }}>
+      <img src={Banner} className="kmp" alt="Banner" width="100%" />
+      <img src={Girl} className="kmp1" alt="Banner" width="24%" />
+      <Grid
+        container
+        direction="row"
+        style={{ marginBottom: "290px" }}
+        className="kmp2"
+      >
         <Grid item md={6} className="align_gr">
           <Grid item md={6} className="font_col">
             <Typography className="text_s">
@@ -53,7 +66,7 @@ const MainBody = () => {
           </Grid>
         </Grid>
       </Grid>
-      <Grid container className="grid_two">
+      <Grid container className="grid mani">
         <Grid item md={12}>
           <Typography variant="h5">
             Get <span className="ft_jk">Started </span> Now
@@ -136,7 +149,8 @@ const MainBody = () => {
         </Grid>
       </Grid>
 
-      <Grid container className="grid_two">
+      <img src={yop} alt="bg" width={1600} className="lastChan" />
+      <Grid container className="grid lastChan1">
         <Grid item md={3} className=" text_grid">
           <Typography>LATEST CHALLENGES</Typography>
           <Typography variant="h3">
@@ -164,7 +178,7 @@ const MainBody = () => {
         </Grid>
       </Grid>
 
-      <Grid container className="grid_two">
+      <Grid container className="grid">
         <Grid item md={12}>
           <Typography variant="h6">MEET ALL THE SOUL HEORES</Typography>
         </Grid>
@@ -173,7 +187,7 @@ const MainBody = () => {
             Choose Your <span className="ft_jk">Charcter</span>
           </Typography>
         </Grid>
-        <Grid item md={12} className="grid_four">
+        <Grid item md={12} className="grid">
           <Grid container direction="row" spacing={33}>
             <Grid item md={2} className="card_four">
               <img src={charCard} alt="card" width={250} />
@@ -274,7 +288,7 @@ const MainBody = () => {
           </Grid>
         </Grid>
       </Grid>
-      <Grid container direction="row" className="grid_two">
+      <Grid container direction="row" className="grid nft">
         <Grid item md={4} className="text_align">
           <Typography variant="h5" className="tex_oll">
             NFT'S
@@ -317,9 +331,9 @@ const MainBody = () => {
           </Grid>
         </Grid>
       </Grid>
-      <Grid container className="grid_two">
+      <Grid container className="grid">
         <Grid item md={10} className="align_gr mnb_p">
-          <Grid container direction="row">
+          <Grid container direction="row" spacing={3}>
             <Grid item md={7}>
               <Typography variant="h5">
                 The future of{" "}
@@ -342,6 +356,15 @@ const MainBody = () => {
           </Grid>
         </Grid>
       </Grid>
+
+      <img
+        src={FootAbove}
+        alt="foot_background"
+        className="footer_bg1"
+        width="100%"
+      />
+
+
       <Footer />
     </>
   );

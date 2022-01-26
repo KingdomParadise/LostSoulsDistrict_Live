@@ -51,8 +51,8 @@ body {
   margin-right: 10px !important;
 }
 
-.grid_two {
-  margin-bottom: 350px;
+.grid {
+  margin-bottom: 150px;
   color: white;
 }
 
@@ -171,4 +171,57 @@ body {
 }
 .klm {
   padding: 6px 40px !important;
+}
+
+.footer_bg {
+  left: 0px;
+  opacity: 0.2;
+  margin-bottom: -17%;
+}
+
+.footer_bg1 {
+  left: 0px;
+  opacity: 0.2;
+  margin-top: -27%;
+  margin-bottom: -10%;
+}
+
+.footer_bg1 {
+  opacity: 5 !important;
+}
+
+.nft {
+  background: url("../images//mainbody/NFT.png") center no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 8px 8px rgb(8, 2, 2) inset;
+}
+
+.lastChan {
+  margin-top: -10%;
+  box-shadow: 0 0 8px 8px rgb(8, 2, 2) inset;
+}
+
+.lastChan1 {
+  margin-top: -30%;
+}
+.kmp {
+  margin-top: -3%;
+
+  position: absolute;
+  z-index: -1;
+  left: 0px;
+  top: 0px;
+}
+
+.kmp1 {
+  margin-left: 60%;
+  margin-top: -5%;
+}
+.kmp2 {
+  margin-top: -50%;
+}
+
+.mani {
+  background: url("../images//mainbody/GetBg.png") center no-repeat;
+  background-size: cover;
 }

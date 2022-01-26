@@ -25,7 +25,7 @@ const NavBar = () => {
           </Link>
         </Grid>
         <Grid item md={1}>
-          <Link to="/">
+          <Link to="/market">
             <Typography className="ft_color">Market</Typography>{" "}
           </Link>
         </Grid>
