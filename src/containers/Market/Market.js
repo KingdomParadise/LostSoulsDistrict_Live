@@ -1,211 +1,320 @@
 import React from "react";
 import NavBar from "../Navbar/NavBar";
 import "../../assert/styles/Market.css";
-import { Grid, Typography } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
-import Box from "@mui/material/Box";
-import OutlinedInput from "@mui/material/OutlinedInput";
-import InputLabel from "@mui/material/InputLabel";
-import MenuItem from "@mui/material/MenuItem";
-import FormControl from "@mui/material/FormControl";
-import Select from "@mui/material/Select";
-import Chip from "@mui/material/Chip";
-
-const ITEM_HEIGHT = 48;
-const ITEM_PADDING_TOP = 8;
-const MenuProps = {
-  PaperProps: {
-    style: {
-      maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
-      width: 250,
-    },
-  },
-};
-
-const names = [
-  "Oliver Hansen",
-  "Van Henry",
-  "April Tucker",
-  "Ralph Hubbard",
-  "Omar Alexander",
-  "Carlos Abbott",
-  "Miriam Wagner",
-  "Bradley Wilkerson",
-  "Virginia Andrews",
-  "Kelly Snyder",
-];
-
-function getStyles(name, personName, theme) {
-  return {
-    fontWeight:
-      personName.indexOf(name) === -1
-        ? theme.typography.fontWeightRegular
-        : theme.typography.fontWeightMedium,
-  };
-}
-
+import { Button, Grid, IconButton, Typography } from "@mui/material";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import SearchIcon from "@mui/icons-material/Search";
+import charCard from "../../assert/images/mainbody/charcterCard.png";
+import FootAbove from "../../assert/images/mainbody/footum.png";
+import Footer from "../Footer/Footer";
+import Banner from "../../assert/images/mainbody/marketbg.png";
 const Market = () => {
-  const theme = useTheme();
-  const [personName, setPersonName] = React.useState([]);
-
-  const handleChange = (event) => {
-    const {
-      target: { value },
-    } = event;
-    setPersonName(
-      // On autofill we get a stringified value.
-      typeof value === "string" ? value.split(",") : value
-    );
-  };
   return (
     <>
+      <img src={Banner} className="kmp" alt="Banner" width="100%" />
       <NavBar />
-
       <Grid container>
         <Grid item md={12} className="grid_it">
           <Typography variant="h6">BUY ALL YOUR FAVOURITES</Typography>
-          <Typography variant="h4">Lost Souls Disctrict NFTs</Typography>
+          <Typography variant="h4">
+            Lost Souls Disctrict <span className="fte_color">NFTs</span>
+          </Typography>
           <Typography variant="h6">
             The list includes the Cosplay and Genesis Promo sets, which mark{" "}
             <br />
             the beginning of your journey
           </Typography>
         </Grid>
-        <Grid container direction="row">
-          <Grid item md={3}>
-            <FormControl sx={{ m: 1, width: 300, mt: 3 }}>
-              <Select
-                multiple
-                displayEmpty
-                value={personName}
-                onChange={handleChange}
-                input={<OutlinedInput />}
-                renderValue={(selected) => {
-                  if (selected.length === 0) {
-                    return <em>Select Category</em>;
-                  }
 
-                  return selected.join(", ");
-                }}
-                MenuProps={MenuProps}
-                inputProps={{ "aria-label": "Without label" }}
-              >
-                <MenuItem disabled value="">
-                  <em>Placeholder</em>
-                </MenuItem>
-                {names.map((name) => (
-                  <MenuItem
-                    key={name}
-                    value={name}
-                    style={getStyles(name, personName, theme)}
-                  >
-                    {name}
-                  </MenuItem>
-                ))}
-              </Select>
-            </FormControl>
+        <Grid item md={12}>
+          <Grid container direction="row">
+            <Grid item md={3}>
+              <Button endIcon={<KeyboardArrowDownIcon />} className="btn_t">
+                Select Category
+              </Button>
+            </Grid>
+            <Grid item md={3}>
+              <input
+                type="text"
+                className="input_p"
+                placeholder="Enter a keyword"
+              />
+              <IconButton className="icon_btn">
+                <SearchIcon className="search_io" />
+              </IconButton>
+            </Grid>
+            <Grid item md={3}>
+              <Button endIcon={<KeyboardArrowDownIcon />} className="btn_t">
+                Listing Currency
+              </Button>
+            </Grid>
+
+            <Grid item md={3}>
+              <Button endIcon={<KeyboardArrowDownIcon />} className="btn_t">
+                Date Listed (Newest First)
+              </Button>
+            </Grid>
           </Grid>
-          <Grid item md={3}>
-            <FormControl sx={{ m: 1, width: 300, mt: 3 }}>
-              <Select
-                multiple
-                displayEmpty
-                value={personName}
-                onChange={handleChange}
-                input={<OutlinedInput />}
-                renderValue={(selected) => {
-                  if (selected.length === 0) {
-                    return <em>Placeholder</em>;
-                  }
-
-                  return selected.join(", ");
-                }}
-                MenuProps={MenuProps}
-                inputProps={{ "aria-label": "Without label" }}
-              >
-                <MenuItem disabled value="">
-                  <em>Placeholder</em>
-                </MenuItem>
-                {names.map((name) => (
-                  <MenuItem
-                    key={name}
-                    value={name}
-                    style={getStyles(name, personName, theme)}
-                  >
-                    {name}
-                  </MenuItem>
-                ))}
-              </Select>
-            </FormControl>
-          </Grid>
-          <Grid item md={3}>
-            <FormControl sx={{ m: 1, width: 300, mt: 3 }}>
-              <Select
-                multiple
-                displayEmpty
-                value={personName}
-                onChange={handleChange}
-                input={<OutlinedInput />}
-                renderValue={(selected) => {
-                  if (selected.length === 0) {
-                    return <em>Placeholder</em>;
-                  }
-
-                  return selected.join(", ");
-                }}
-                MenuProps={MenuProps}
-                inputProps={{ "aria-label": "Without label" }}
-              >
-                <MenuItem disabled value="">
-                  <em>Placeholder</em>
-                </MenuItem>
-                {names.map((name) => (
-                  <MenuItem
-                    key={name}
-                    value={name}
-                    style={getStyles(name, personName, theme)}
-                  >
-                    {name}
-                  </MenuItem>
-                ))}
-              </Select>
-            </FormControl>
-          </Grid>
-          <Grid item md={3}>
-            <FormControl sx={{ m: 1, width: 300, mt: 3 }}>
-              <Select
-                multiple
-                displayEmpty
-                value={personName}
-                onChange={handleChange}
-                input={<OutlinedInput />}
-                renderValue={(selected) => {
-                  if (selected.length === 0) {
-                    return <em>Placeholder</em>;
-                  }
-
-                  return selected.join(", ");
-                }}
-                MenuProps={MenuProps}
-                inputProps={{ "aria-label": "Without label" }}
-              >
-                <MenuItem disabled value="">
-                  <em>Placeholder</em>
-                </MenuItem>
-                {names.map((name) => (
-                  <MenuItem
-                    key={name}
-                    value={name}
-                    style={getStyles(name, personName, theme)}
-                  >
-                    {name}
-                  </MenuItem>
-                ))}
-              </Select>
-            </FormControl>
+          <Grid item md={12}>
+            <Grid container direction="row" spacing={2}>
+              <Grid item md={3} className="mkl_op">
+                <img src={charCard} alt="card" width={250} height={370} />
+                <Grid item className="bh_pl1 klmj">
+                  <Typography style={{ color: "white" }} className="blade">
+                    &nbsp; &nbsp;Kick <br />
+                    &nbsp; &nbsp;
+                    <span style={{ color: "skyblue" }}>Armour</span> &nbsp;
+                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp; 0.25417
+                    <br /> &nbsp; &nbsp;
+                    <span style={{ color: "gray", fontSize: "14px" }}>
+                      Chapter 1{" "}
+                    </span>
+                    &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BTC
+                  </Typography>
+                </Grid>
+              </Grid>
+              <Grid item md={3} className="mkl_op">
+                <img src={charCard} alt="card" width={250} height={370} />
+                <Grid item className="bh_pl1 klmj">
+                  <Typography style={{ color: "white" }} className="blade">
+                    &nbsp; &nbsp;Kick <br />
+                    &nbsp; &nbsp;
+                    <span style={{ color: "skyblue" }}>Armour</span> &nbsp;
+                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;0.25417
+                    <br /> &nbsp; &nbsp;
+                    <span style={{ color: "gray", fontSize: "14px" }}>
+                      Chapter 1{" "}
+                    </span>
+                    &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BTC
+                  </Typography>
+                </Grid>
+              </Grid>
+              <Grid item md={3} className="mkl_op">
+                <img src={charCard} alt="card" width={250} height={370} />
+                <Button className="fk_io">Buy Now</Button>
+                <Grid item className="bh_pl1 klmj klmop">
+                  <Typography style={{ color: "white" }} className="blade">
+                    &nbsp; &nbsp;Kick <br />
+                    &nbsp; &nbsp;
+                    <span style={{ color: "skyblue" }}>Armour</span> &nbsp;
+                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp; 0.25417
+                    <br /> &nbsp; &nbsp;
+                    <span style={{ color: "gray", fontSize: "14px" }}>
+                      Chapter 1{" "}
+                    </span>
+                    &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BTC
+                  </Typography>
+                </Grid>
+              </Grid>
+              <Grid item md={3} className="mkl_op">
+                <img src={charCard} alt="card" width={250} height={370} />
+                <Grid item className="bh_pl1 klmj">
+                  <Typography style={{ color: "white" }} className="blade">
+                    &nbsp; &nbsp;Kick <br />
+                    &nbsp; &nbsp;
+                    <span style={{ color: "skyblue" }}>Armour</span> &nbsp;
+                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp; 0.25417
+                    <br /> &nbsp; &nbsp;
+                    <span style={{ color: "gray", fontSize: "14px" }}>
+                      Chapter 1{" "}
+                    </span>
+                    &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BTC
+                  </Typography>
+                </Grid>
+              </Grid>
+              <Grid item md={3} className="mkl_op">
+                <img src={charCard} alt="card" width={250} height={370} />
+                <Grid item className="bh_pl1 klmj">
+                  <Typography style={{ color: "white" }} className="blade">
+                    &nbsp; &nbsp;Kick <br />
+                    &nbsp; &nbsp;
+                    <span style={{ color: "skyblue" }}>Armour</span> &nbsp;
+                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp; 0.25417
+                    <br /> &nbsp; &nbsp;
+                    <span style={{ color: "gray", fontSize: "14px" }}>
+                      Chapter 1{" "}
+                    </span>
+                    &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BTC
+                  </Typography>
+                </Grid>
+              </Grid>{" "}
+              <Grid item md={3} className="mkl_op">
+                <img src={charCard} alt="card" width={250} height={370} />
+                <Grid item className="bh_pl1 klmj">
+                  <Typography style={{ color: "white" }} className="blade">
+                    &nbsp; &nbsp;Kick <br />
+                    &nbsp; &nbsp;
+                    <span style={{ color: "skyblue" }}>Armour</span> &nbsp;
+                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;0.25417
+                    <br /> &nbsp; &nbsp;
+                    <span style={{ color: "gray", fontSize: "14px" }}>
+                      Chapter 1{" "}
+                    </span>
+                    &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BTC
+                  </Typography>
+                </Grid>
+              </Grid>{" "}
+              <Grid item md={3} className="mkl_op">
+                <img src={charCard} alt="card" width={250} height={370} />
+                <Grid item className="bh_pl1 klmj">
+                  <Typography style={{ color: "white" }} className="blade">
+                    &nbsp; &nbsp;Kick <br />
+                    &nbsp; &nbsp;
+                    <span style={{ color: "skyblue" }}>Armour</span> &nbsp;
+                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;0.25417
+                    <br /> &nbsp; &nbsp;
+                    <span style={{ color: "gray", fontSize: "14px" }}>
+                      Chapter 1{" "}
+                    </span>
+                    &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BTC
+                  </Typography>
+                </Grid>
+              </Grid>
+              <Grid item md={3} className="mkl_op">
+                <img src={charCard} alt="card" width={250} height={370} />
+                <Grid item className="bh_pl1 klmj">
+                  <Typography style={{ color: "white" }} className="blade">
+                    &nbsp; &nbsp;Kick <br />
+                    &nbsp; &nbsp;
+                    <span style={{ color: "skyblue" }}>Armour</span> &nbsp;
+                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp; 0.25417
+                    <br /> &nbsp; &nbsp;
+                    <span style={{ color: "gray", fontSize: "14px" }}>
+                      Chapter 1{" "}
+                    </span>
+                    &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BTC
+                  </Typography>
+                </Grid>
+              </Grid>
+              <Grid item md={3} className="mkl_op">
+                <img src={charCard} alt="card" width={250} height={370} />
+                <Grid item className="bh_pl1 klmj">
+                  <Typography style={{ color: "white" }} className="blade">
+                    &nbsp; &nbsp;Kick <br />
+                    &nbsp; &nbsp;
+                    <span style={{ color: "skyblue" }}>Armour</span> &nbsp;
+                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp; 0.25417
+                    <br /> &nbsp; &nbsp;
+                    <span style={{ color: "gray", fontSize: "14px" }}>
+                      Chapter 1{" "}
+                    </span>
+                    &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BTC
+                  </Typography>
+                </Grid>
+              </Grid>
+              <Grid item md={3} className="mkl_op">
+                <img src={charCard} alt="card" width={250} height={370} />
+                <Grid item className="bh_pl1 klmj">
+                  <Typography style={{ color: "white" }} className="blade">
+                    &nbsp; &nbsp;Kick <br />
+                    &nbsp; &nbsp;
+                    <span style={{ color: "skyblue" }}>Armour</span> &nbsp;
+                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;0.25417
+                    <br /> &nbsp; &nbsp;
+                    <span style={{ color: "gray", fontSize: "14px" }}>
+                      Chapter 1{" "}
+                    </span>
+                    &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BTC
+                  </Typography>
+                </Grid>
+              </Grid>
+              <Grid item md={3} className="mkl_op">
+                <img src={charCard} alt="card" width={250} height={370} />
+                <Grid item className="bh_pl1 klmj">
+                  <Typography style={{ color: "white" }} className="blade">
+                    &nbsp; &nbsp;Kick <br />
+                    &nbsp; &nbsp;
+                    <span style={{ color: "skyblue" }}>Armour</span> &nbsp;
+                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp; 0.25417
+                    <br /> &nbsp; &nbsp;
+                    <span style={{ color: "gray", fontSize: "14px" }}>
+                      Chapter 1{" "}
+                    </span>
+                    &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BTC
+                  </Typography>
+                </Grid>
+              </Grid>{" "}
+              <Grid item md={3} className="mkl_op">
+                <img src={charCard} alt="card" width={250} height={370} />
+                <Grid item className="bh_pl1 klmj">
+                  <Typography style={{ color: "white" }} className="blade">
+                    &nbsp; &nbsp;Kick <br />
+                    &nbsp; &nbsp;
+                    <span style={{ color: "skyblue" }}>Armour</span> &nbsp;
+                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp; 0.25417
+                    <br /> &nbsp; &nbsp;
+                    <span style={{ color: "gray", fontSize: "14px" }}>
+                      Chapter 1{" "}
+                    </span>
+                    &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BTC
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Grid>
           </Grid>
         </Grid>
       </Grid>
+      <br />
+      <br /> <br />
+      <Grid item md={12}>
+        <Button className="btn_t">show more</Button>
+      </Grid>
+      <Grid container className="grid">
+        <Grid item md={12} className="align_gr mnb_p">
+          <Grid container direction="row" spacing={3}>
+            <Grid item md={7}>
+              <Typography variant="h5">
+                The future of{" "}
+                <span className="ft_jk"> Lost Souls District</span> <br />
+                depends in your hands
+              </Typography>
+              <Typography>Subscribe now to get exclusive benefits</Typography>
+            </Grid>
+            <Grid item md={3} className="emailfi">
+              <input
+                type="text"
+                placeholder="email address"
+                className="input_field"
+              />
+            </Grid>
+
+            <Grid item className="klio">
+              <Button className="ft_borr   klm">Sign In</Button>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
+      <img
+        src={FootAbove}
+        alt="foot_background"
+        className="footer_bg1"
+        width="100%"
+      />
+      <Footer />
     </>
   );
 };

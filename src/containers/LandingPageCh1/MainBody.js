@@ -5,6 +5,7 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
+import { Row, Col } from "react-bootstrap";
 import { typography } from "@mui/system";
 import React from "react";
 import "../../assert/styles/MainStyles.css";
@@ -21,7 +22,7 @@ import three from "../../assert/images/mainbody/3.png";
 import charCard from "../../assert/images/mainbody/charcterCard.png";
 import yop from "../../assert/images/mainbody/yop.png";
 import Banner from "../../assert/images/mainbody/bb.png";
-import Girl from "../../assert/images/mainbody/gg.png";
+import Girl from "../../assert/images/mainbody/gg1.png";
 import Foot from "../../assert/images/mainbody/footerbg.png";
 import FootAbove from "../../assert/images/mainbody/footum.png";
 
@@ -29,15 +30,15 @@ const MainBody = () => {
   return (
     <>
       <img src={Banner} className="kmp" alt="Banner" width="100%" />
-      <img src={Girl} className="kmp1" alt="Banner" width="24%" />
+      <img src={Girl} className="kmp1" alt="Banner" width="28%" />
       <Grid
         container
         direction="row"
-        style={{ marginBottom: "290px" }}
+        style={{ marginBottom: "290px", paddingLeft:"5%" }}
         className="kmp2"
       >
         <Grid item md={6} className="align_gr">
-          <Grid item md={6} className="font_col">
+          <Grid item md={12} className="font_col">
             <Typography className="text_s">
               {" "}
               Welcome to the open metaverse
@@ -45,10 +46,15 @@ const MainBody = () => {
           </Grid>
           <Grid item md={4}>
             {" "}
-            <img src={Lost} width={400} alt="Lost SoulS district" />
+            <img
+              src={Lost}
+              width={600}
+              alt="Lost SoulS district"
+              className="lost_soul"
+            />
           </Grid>
 
-          <Grid item md={5} className="font_col">
+          <Grid item md={12} className="font_col">
             <Typography className="text_ss">
               {" "}
               Neque porro quisquam est qui dolor <br />
@@ -57,7 +63,7 @@ const MainBody = () => {
           </Grid>
           <Grid container className="ft_aor">
             {" "}
-            <Grid item className="kk_c">
+            <Grid item className="kk_c" >
               <Button className="ft_borr">Play Now</Button>
             </Grid>
             <Grid item>
@@ -68,7 +74,7 @@ const MainBody = () => {
       </Grid>
       <Grid container className="grid mani">
         <Grid item md={12}>
-          <Typography variant="h5">
+          <Typography variant="h4">
             Get <span className="ft_jk">Started </span> Now
           </Typography>
         </Grid>
@@ -149,7 +155,7 @@ const MainBody = () => {
         </Grid>
       </Grid>
 
-      <img src={yop} alt="bg" width={1600} className="lastChan" />
+      <img src={yop} alt="bg" width="98%" className="lastChan" />
       <Grid container className="grid lastChan1">
         <Grid item md={3} className=" text_grid">
           <Typography>LATEST CHALLENGES</Typography>
@@ -160,19 +166,28 @@ const MainBody = () => {
           <Grid item className="card_op">
             <img src={one} alt="one" width={30} height={30} className="img" />
             <Typography variant="h6" className="her_mo">
-              Hermoine 25.8772200BTC
+                  Hermoine
+            </Typography>
+            <Typography variant="h6" className="her_mo">
+              25.8772200BTC
             </Typography>
           </Grid>
           <Grid item className="card_op">
             <img src={two} alt="one" width={30} height={30} className="img" />
             <Typography variant="h6" className="her_mo">
-              Harry 25.8772200BTC
+              Harry 
+            </Typography>
+            <Typography variant="h6" className="her_mo">
+              25.8772100BTC
             </Typography>
           </Grid>
           <Grid item className="card_op">
             <img src={three} alt="one" width={30} height={30} className="img" />
             <Typography variant="h6" className="her_mo">
-              Ronald 25.8772200BTC
+              Ronald 
+            </Typography>
+            <Typography variant="h6" className="her_mo">
+              25.8772000BTC
             </Typography>
           </Grid>
         </Grid>
@@ -188,12 +203,17 @@ const MainBody = () => {
           </Typography>
         </Grid>
         <Grid item md={12} className="grid">
-          <Grid container direction="row" spacing={33}>
-            <Grid item md={2} className="card_four">
-              <img src={charCard} alt="card" width={250} />
+          <Grid container direction="row" style={{justifyContent:"center"}} >
+            <Grid item md={2} className="card_four mankl">
+              <img
+                src={charCard}
+                alt="card"
+                width={220}
+                className="cardHover"
+              />
 
               <Grid item className="bh_pl">
-                <Typography>
+                <Typography className="blade">
                   &nbsp; &nbsp;Bladesworn <br />
                   &nbsp; &nbsp;<span style={{ color: "skyblue" }}>
                     Warrior
@@ -209,10 +229,10 @@ const MainBody = () => {
                 </Typography>
               </Grid>
             </Grid>
-            <Grid item md={2}>
-              <img src={charCard} alt="card" width={250} height={450} />
+            <Grid item md={2} className="mankl">
+              <img src={charCard} alt="card" width={220} height={400} />
               <Grid item className="bh_pl">
-                <Typography>
+                <Typography className="blade">
                   &nbsp; &nbsp;Future <br />
                   &nbsp; &nbsp;<span style={{ color: "skyblue" }}>
                     Armour
@@ -228,10 +248,10 @@ const MainBody = () => {
                 </Typography>
               </Grid>
             </Grid>
-            <Grid item md={2} className="card_four">
-              <img src={charCard} alt="card" width={250} />
+            <Grid item md={2} className="card_four mankl">
+              <img src={charCard} alt="card" width={220} />
               <Grid item className="bh_pl">
-                <Typography>
+                <Typography className="blade">
                   &nbsp; &nbsp;Bladesworn <br />
                   &nbsp; &nbsp;<span style={{ color: "skyblue" }}>
                     Warrior
@@ -247,10 +267,10 @@ const MainBody = () => {
                 </Typography>
               </Grid>
             </Grid>
-            <Grid item md={2}>
-              <img src={charCard} alt="card" width={250} height={450} />
+            <Grid item md={2} className="mankl">
+              <img src={charCard} alt="card" width={220} height={400} />
               <Grid item className="bh_pl">
-                <Typography>
+                <Typography className="blade">
                   &nbsp; &nbsp;Alloy <br />
                   &nbsp; &nbsp;<span style={{ color: "skyblue" }}>
                     Drive
@@ -266,10 +286,10 @@ const MainBody = () => {
                 </Typography>
               </Grid>
             </Grid>
-            <Grid item md={2} className="card_four">
-              <img src={charCard} alt="card" width={250} />
+            <Grid item md={2} className="card_four mankl">
+              <img src={charCard} alt="card" width={220} />
               <Grid item className="bh_pl">
-                <Typography>
+                <Typography className="blade">
                   &nbsp; &nbsp;Kick <br />
                   &nbsp; &nbsp;<span style={{ color: "skyblue" }}>
                     Armour
@@ -332,8 +352,8 @@ const MainBody = () => {
         </Grid>
       </Grid>
       <Grid container className="grid">
-        <Grid item md={10} className="align_gr mnb_p">
-          <Grid container direction="row" spacing={3}>
+        <Grid item md={12} className="align_gr mnb_p">
+          <Grid container direction="row" spacing={3} className="jkk_op">
             <Grid item md={7}>
               <Typography variant="h5">
                 The future of{" "}
@@ -363,7 +383,6 @@ const MainBody = () => {
         className="footer_bg1"
         width="100%"
       />
-
 
       <Footer />
     </>

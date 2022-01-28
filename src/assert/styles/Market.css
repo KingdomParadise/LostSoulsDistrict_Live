@@ -1,13 +1,90 @@
-/* .ft_bor {
-  float: none !important;
-  display: inline-block !important;
-} */
-
 .grid_it {
   color: white;
   margin-top: 5% !important;
+  margin-bottom: 5% !important;
 }
 
-/* body {
-  background: green !important;
-} */
+.fte_color {
+  color: #06a6e9;
+}
+
+.btn_t {
+  color: white !important;
+  background: #06a6e9 !important;
+
+  border-radius: 30px !important;
+  font-size: 10px !important;
+  width: 200px;
+}
+
+.input_p {
+  border-radius: 30px !important;
+  border: 2px solid #06a6e9 !important;
+  background: transparent !important;
+  color: white !important;
+  width: 200px;
+  height: 35px;
+  padding-left: 1.5rem;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.search_io {
+  color: white;
+}
+
+.icon_btn {
+  margin-left: -12% !important;
+}
+
+.klmj {
+  margin-top: 5% !important;
+  margin-left: 17% !important;
+}
+
+.fk_io {
+  padding: 10px 10px !important;
+  background: white !important;
+  border: 2px solid #06a6e9 !important;
+  padding: 6px 30px !important;
+  border-radius: 20px !important;
+  margin-top: -50% !important;
+  margin-left: 6% !important;
+  color: #06a6e9 !important;
+}
+
+.klmop {
+  margin-top: -2% !important;
+}
+
+.blade {
+  font-size: 80% !important;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.bh_pl1 {
+  text-align: left;
+
+  background: #1b1b1b;
+  width: 60%;
+  height: 13%;
+  margin-left: 20% !important;
+  border-radius: 10px;
+}
+
+.mkl_op {
+  transition: 1s !important;
+}
+
+.mkl_op:hover {
+  transform: scale(1.1) !important;
+
+  z-index: 2 !important;
+}
+
+.jmk {
+  margin-left: 12% !important;
+}

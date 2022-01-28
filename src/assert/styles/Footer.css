@@ -8,25 +8,45 @@
   color: #ffffff;
 }
 
-
 .text_jk {
   font-size: 20px !important;
   font-family: "Montserrat" !important;
   color: rgb(255, 255, 255) !important;
 }
 
-
 .align {
   text-align: left;
 }
-
 
 .under_jm {
   display: inline-block !important;
   cursor: pointer;
 }
 
-
 .copy_k {
   margin-top: 50% !important;
+}
+
+.mklak {
+  margin-left: 5% !important;
+}
+
+.footer_logo {
+  margin-left: -1% !important;
+}
+
+.under_jm,
+.hov_icon {
+  transition: 1s !important;
+}
+
+.under_jm:hover,
+.hov_icon:hover {
+  transform: scale(1.3) !important;
+  z-index: 2 !important;
+}
+@media (min-width: 1500px) {
+  .sociaRe {
+    margin-left: 100% !important;
+  }
 }

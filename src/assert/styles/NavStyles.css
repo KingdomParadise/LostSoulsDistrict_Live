@@ -1,6 +1,6 @@
 .nav_entire {
   background: #242119 !important;
-  margin: 10px;
+  margin: 18px;
   width: 98% !important;
   border-radius: 15px;
 }
@@ -15,17 +15,19 @@
   display: inline-block !important;
   text-transform: capitalize !important;
   font-family: "PROXONRegular !important";
-  font-size: 20px !important;
+  font-size: 90% !important;
 }
 
 .ft_bor {
-  font-size: 10px !important;
+  font-size: 0.9rem !important;
   border: 1px solid #02b8e4 !important;
   border-radius: 20px !important;
   background: #ffffff !important;
+  display: inline-block !important;
   color: #02b8e4 !important;
   padding: 10px 60px !important;
-  float: right;
+  /* float: right; */
+  margin-left: 55% !important;
   /* margin-left: 100% !important; */
   cursor: pointer;
 }
@@ -34,4 +36,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.4rem;
 }
