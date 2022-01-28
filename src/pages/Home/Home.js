@@ -3,7 +3,12 @@ import PropTypes from 'prop-types';
 import './Home.scss';
 import lady from '../../assets/img/lady.png';
 import igun from '../../assets/img/i-gun.png';
+import itrade from '../../assets/img/i-trade.png';
+import icollect from '../../assets/img/i-collect.png';
+import imaster from '../../assets/img/i-master.png';
 import i1 from '../../assets/img/i1.png';
+import i2 from '../../assets/img/i2.png';
+import i3 from '../../assets/img/i3.png';
 import Cho_card1 from '../../assets/img/cho_card1.png';
 import Cho_card2 from '../../assets/img/cho_card2.png';
 import mask from '../../assets/img/mask.png';
@@ -63,7 +68,7 @@ const Home = () => (
             <div className='card_content'>
               <div className='ftf f-20 pt-4'>Play</div>
               <div className='cicon'>
-                <img src={igun} className='mb-5 mt-5' />
+                <img src={icollect} className='mb-5 mt-5' />
                 <h6>
                   <b>Lost Souls</b><br />
                   is an immersive<br />
@@ -77,7 +82,7 @@ const Home = () => (
             <div className='card_content'>
               <div className='ftf f-20 pt-4'>Play</div>
               <div className='cicon'>
-                <img src={igun} className='mb-5 mt-5' />
+                <img src={itrade} className='mb-5 mt-5' />
                 <h6>
                   <b>Lost Souls</b><br />
                   is an immersive<br />
@@ -91,7 +96,7 @@ const Home = () => (
             <div className='card_content'>
               <div className='ftf f-20 pt-4'>Play</div>
               <div className='cicon'>
-                <img src={igun} className='mb-5 mt-5' />
+                <img src={imaster} className='mb-5 mt-5' />
                 <h6>
                   <b>Lost Souls</b><br />
                   is an immersive<br />
@@ -131,7 +136,7 @@ const Home = () => (
             <div className='top_card_content'>
               <div className='d-flex justify-content-between'>
                 <div>
-                  <img src={i1} className='i1' />
+                  <img src={i2} className='i1' />
                 </div>
                 <div className='align-self-center f-20'>
                   Hermoine
@@ -144,7 +149,7 @@ const Home = () => (
             <div className='top_card_content'>
               <div className='d-flex justify-content-between'>
                 <div>
-                  <img src={i1} className='i1' />
+                  <img src={i3} className='i1' />
                 </div>
                 <div className='align-self-center f-20'>
                   Hermoine
