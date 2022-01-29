@@ -15,14 +15,15 @@ const Market = () => {
       <NavBar />
       <Grid container>
         <Grid item md={12} className="grid_it">
-          <Typography variant="h6">BUY ALL YOUR FAVOURITES</Typography>
-          <Typography variant="h4">
+          <Typography variant="h6" style={{ color: "grey" }}>
+            BUY ALL YOUR FAVOURITES
+          </Typography>
+          <Typography variant="h3" className="top">
             Lost Souls Disctrict <span className="fte_color">NFTs</span>
           </Typography>
-          <Typography variant="h6">
-            The list includes the Cosplay and Genesis Promo sets, which mark{" "}
-            <br />
-            the beginning of your journey
+          <Typography variant="h6" style={{ fontStyle: "italic" }}>
+            The list includes the Cosplay and Genesis Promo sets, <br />
+            which mark the beginning of your journey
           </Typography>
         </Grid>
 
@@ -44,13 +45,13 @@ const Market = () => {
               </IconButton>
             </Grid>
             <Grid item md={3}>
-              <Button endIcon={<KeyboardArrowDownIcon />} className="btn_t">
+              <Button endIcon={<KeyboardArrowDownIcon />} className="btn_t1">
                 Listing Currency
               </Button>
             </Grid>
 
             <Grid item md={3}>
-              <Button endIcon={<KeyboardArrowDownIcon />} className="btn_t">
+              <Button endIcon={<KeyboardArrowDownIcon />} className="btn_t1">
                 Date Listed (Newest First)
               </Button>
             </Grid>
@@ -281,7 +282,7 @@ const Market = () => {
       <br />
       <br /> <br />
       <Grid item md={12}>
-        <Button className="btn_t">show more</Button>
+        <Button className="btn_t1">Load More Results</Button>
       </Grid>
       <Grid container className="grid">
         <Grid item md={12} className="align_gr mnb_p">
@@ -303,7 +304,7 @@ const Market = () => {
             </Grid>
 
             <Grid item className="klio">
-              <Button className="ft_borr   klm">Sign In</Button>
+              <Button className="ft_borr klm">Sign In</Button>
             </Grid>
           </Grid>
         </Grid>

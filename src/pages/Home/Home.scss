@@ -13,7 +13,7 @@
 body {
     font-family: 'Montserrat', sans-serif !important;
     color: #fff !important;
-    background-color: #070a0d !important;
+    background-color: #0b151a !important;
 }
 
 .tp {
@@ -26,6 +26,9 @@ body {
 
 .f-20 {
     font-size: 20px;
+}
+.fw-200{
+    font-weight: 200;
 }
 .banner_sec {
     background-image: url("../../assets/img/mainbg.png");
@@ -165,7 +168,7 @@ body {
     position: relative;
     .future_sec_content {
         padding: 30px 30px 15px;
-        background: #9c9c9c30;
+        background-color: #22314291;
         border-radius: 15px;
     }
     button {

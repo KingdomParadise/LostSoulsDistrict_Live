@@ -14,8 +14,9 @@
   /* margin: 15px !important; */
   display: inline-block !important;
   text-transform: capitalize !important;
-  font-family: "PROXONRegular !important";
-  font-size: 90% !important;
+  font-family: Proxon !important;
+
+  font-size: 80% !important;
 }
 
 .ft_bor {
@@ -25,9 +26,11 @@
   background: #ffffff !important;
   display: inline-block !important;
   color: #02b8e4 !important;
-  padding: 10px 60px !important;
+  padding: 3% 9% !important;
+
   /* float: right; */
   margin-left: 55% !important;
+  font-family: Proxon !important;
   /* margin-left: 100% !important; */
   cursor: pointer;
 }
@@ -36,5 +39,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.4rem;
+  font-size: 150%;
+  padding: 1%;
+}
+
+.logo_image {
+  width: 100%;
 }

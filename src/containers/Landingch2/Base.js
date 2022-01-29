@@ -3,7 +3,7 @@ import React from "react";
 const Base = () => {
   return (
     <>
-      <h1>Bye</h1>
+      <h1 style={{ color: "white" }}>Bye</h1>
     </>
   );
 };

@@ -1,0 +1,158 @@
+.banner_section {
+    height: 100vh;
+    background-image: url("../../assets/img/chapter1/main_bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.top_section {
+    padding: 75px 0px;
+    .tcard {
+        background-image: url("../../assets/img/chapter1/tcard1.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 98px;
+        padding: 15px;
+        padding: 25px 8px;
+        margin-bottom: 15px;
+        .tcardcont {
+            font-weight: 200;
+            b {
+                font-weight: bold;
+            }
+        }
+        .count {
+            background-image: url("../../assets/img/chapter1/tcount1.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 50px;
+            width: 62px;
+            div {
+                font-size: 24px;
+                font-weight: bold;
+                padding: 8px;
+            }
+        }
+    }
+}
+
+.bg_section {
+    background-image: url("../../assets/img/chapter1/begbg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 125px 0px;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    .beg_card {
+        background-image: url("../../assets/img/chapter1/begcard.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 150px;
+        font-weight: 200;
+        height: 213px;
+        padding: 30px 35px;
+        font-style: italic;
+    }
+}
+
+.high_sec {
+    text-align: center;
+    padding: 75px 0;
+    .sepperate_line {
+        border-left: 3px solid #02b8e4;
+        box-shadow: 0px 0px 19px #02b8e4;
+        margin: 25px 0px 115px 0px;
+    }
+    img {
+        padding: 0px 25px;
+        margin-bottom: 15px;
+    }
+    h6 {
+        // margin-bottom: 5px;
+    }
+}
+
+.choo_sec {
+    background-image: url("../../assets/img/chapter1/chobg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 125px 0px;
+    min-height: 85vh;
+    .choo_card {
+        background-image: url("../../assets/img/chapter1/tcard1.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 68px;
+        padding: 13px 20px;
+        text-align: left;
+        margin-bottom: 30px;
+        h6 {
+            margin: 0;
+        }
+    }
+    .w-85{
+        width: 85%;
+    }
+}
+
+.split_sec {
+    background-image: url("../../assets/img/chapter1/splitbg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 125px 0px;
+    text-align: center;
+    .exp_btn {
+        background: linear-gradient(45deg, #018fb2, #2eabe5);
+        border-radius: 30px;
+        padding: 8px 15px;
+        padding: 5px 18px;
+        border: 2px solid #018fb2;
+        color: #fff;
+    }
+    .buy_btn{
+        border-radius: 30px;
+        padding: 8px 15px;
+        padding: 5px 18px;
+        border: 2px solid #effbff;
+        color: #02b8e4;
+    }
+}
+
+.loot_sec{
+    padding: 75px 0;
+    .buy_btn{
+        background: linear-gradient(45deg, #018fb2, #2eabe5);
+        border-radius: 30px;
+        padding: 8px 15px;
+        padding: 5px 18px;
+        border: 2px solid #018fb2;
+        color: #fff;
+    }
+    .lootbox:hover{
+        .loot{
+            display: none;
+        }
+        .lootactive{
+            display: block !important;
+        }
+        .buy_btn{
+            visibility: visible !important;
+        }
+    }
+    .w-85{
+        width: 85%;
+    }
+}
+
+.footmarg{
+    margin-top: -163px;
+}

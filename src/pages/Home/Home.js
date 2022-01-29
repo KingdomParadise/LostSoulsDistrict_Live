@@ -13,9 +13,13 @@ import Cho_card1 from '../../assets/img/cho_card1.png';
 import Cho_card2 from '../../assets/img/cho_card2.png';
 import mask from '../../assets/img/mask.png';
 import footbg from '../../assets/img/footbg.png';
+import Header from '../../common/Header/Header';
+import Footer from '../../common/Footer/Footer';
 
 
 const Home = () => (
+  <>
+  <Header/>
   <div className="Home" data-testid="Home">
 
     <section className='banner_sec'>
@@ -321,6 +325,8 @@ const Home = () => (
     </section>
 
   </div>
+  <Footer/>
+  </>
 );
 
 Home.propTypes = {};

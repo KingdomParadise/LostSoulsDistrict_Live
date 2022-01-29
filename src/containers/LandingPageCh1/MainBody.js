@@ -5,7 +5,6 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import { Row, Col } from "react-bootstrap";
 import { typography } from "@mui/system";
 import React from "react";
 import "../../assert/styles/MainStyles.css";
@@ -34,7 +33,7 @@ const MainBody = () => {
       <Grid
         container
         direction="row"
-        style={{ marginBottom: "290px", paddingLeft:"5%" }}
+        style={{ marginBottom: "290px" }}
         className="kmp2"
       >
         <Grid item md={6} className="align_gr">
@@ -63,7 +62,7 @@ const MainBody = () => {
           </Grid>
           <Grid container className="ft_aor">
             {" "}
-            <Grid item className="kk_c" >
+            <Grid item className="kk_c">
               <Button className="ft_borr">Play Now</Button>
             </Grid>
             <Grid item>
@@ -74,7 +73,7 @@ const MainBody = () => {
       </Grid>
       <Grid container className="grid mani">
         <Grid item md={12}>
-          <Typography variant="h4">
+          <Typography variant="h4" className="ftf">
             Get <span className="ft_jk">Started </span> Now
           </Typography>
         </Grid>
@@ -158,35 +157,35 @@ const MainBody = () => {
       <img src={yop} alt="bg" width="98%" className="lastChan" />
       <Grid container className="grid lastChan1">
         <Grid item md={3} className=" text_grid">
-          <Typography>LATEST CHALLENGES</Typography>
-          <Typography variant="h3">
+          <Typography className="Latest">LATEST CHALLENGES</Typography>
+          <Typography variant="h3" className="top">
             <span className="ft_jk">Top</span> Players
           </Typography>
 
           <Grid item className="card_op">
             <img src={one} alt="one" width={30} height={30} className="img" />
-            <Typography variant="h6" className="her_mo">
-                  Hermoine
+            <Typography variant="h6" className="her_mo top">
+              Hermoine
             </Typography>
-            <Typography variant="h6" className="her_mo">
+            <Typography variant="h6" className="her_mo top">
               25.8772200BTC
             </Typography>
           </Grid>
           <Grid item className="card_op">
             <img src={two} alt="one" width={30} height={30} className="img" />
-            <Typography variant="h6" className="her_mo">
-              Harry 
+            <Typography variant="h6" className="her_mo top">
+              Harry
             </Typography>
-            <Typography variant="h6" className="her_mo">
+            <Typography variant="h6" className="her_mo top">
               25.8772100BTC
             </Typography>
           </Grid>
           <Grid item className="card_op">
             <img src={three} alt="one" width={30} height={30} className="img" />
-            <Typography variant="h6" className="her_mo">
-              Ronald 
+            <Typography variant="h6" className="her_mo top">
+              Ronald
             </Typography>
-            <Typography variant="h6" className="her_mo">
+            <Typography variant="h6" className="her_mo top">
               25.8772000BTC
             </Typography>
           </Grid>
@@ -195,15 +194,17 @@ const MainBody = () => {
 
       <Grid container className="grid">
         <Grid item md={12}>
-          <Typography variant="h6">MEET ALL THE SOUL HEORES</Typography>
+          <Typography variant="h6" className="Latest">
+            MEET ALL THE SOUL HEORES
+          </Typography>
         </Grid>
         <Grid item md={12}>
-          <Typography variant="h3">
+          <Typography variant="h3" className="top">
             Choose Your <span className="ft_jk">Charcter</span>
           </Typography>
         </Grid>
         <Grid item md={12} className="grid">
-          <Grid container direction="row" style={{justifyContent:"center"}} >
+          <Grid container direction="row" style={{justifyContent:"center"}}>
             <Grid item md={2} className="card_four mankl">
               <img
                 src={charCard}
@@ -310,7 +311,7 @@ const MainBody = () => {
       </Grid>
       <Grid container direction="row" className="grid nft">
         <Grid item md={4} className="text_align">
-          <Typography variant="h5" className="tex_oll">
+          <Typography variant="h5" className="tex_oll top">
             NFT'S
           </Typography>
           <Typography>
@@ -331,7 +332,7 @@ const MainBody = () => {
         </Grid>
         <Grid item md={4} className="text_align text_align_p ">
           {" "}
-          <Typography variant="h5" className="tex_oll lok_pl">
+          <Typography variant="h5" className="tex_oll lok_pl top">
             Liqidity Mining
           </Typography>
           <Typography>
@@ -354,13 +355,13 @@ const MainBody = () => {
       <Grid container className="grid">
         <Grid item md={12} className="align_gr mnb_p">
           <Grid container direction="row" spacing={3} className="jkk_op">
-            <Grid item md={7}>
-              <Typography variant="h5">
+            <Grid item md={7} style={{paddingLeft:"5%", paddingTop:"2.4%"}}>
+              <Typography variant="h5" className="top">
                 The future of{" "}
                 <span className="ft_jk"> Lost Souls District</span> <br />
                 depends in your hands
               </Typography>
-              <Typography>Subscribe now to get exclusive benefits</Typography>
+              <Typography> Subscribe now to get exclusive benefits</Typography>
             </Grid>
             <Grid item md={3} className="emailfi">
               <input
@@ -369,9 +370,8 @@ const MainBody = () => {
                 className="input_field"
               />
             </Grid>
-
-            <Grid item className="klio">
-              <Button className="ft_borr   klm">Sign In</Button>
+            <Grid item md={2} className="klio">
+              <Button className="ft_borr klm">Sign In</Button>
             </Grid>
           </Grid>
         </Grid>

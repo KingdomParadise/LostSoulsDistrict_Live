@@ -1,6 +1,6 @@
 import React from "react";
 
-import logo from "../../assert/images/bottomLogo.png";
+import logo from "../../assert/images/logo.png";
 import { Grid, Link, Typography } from "@mui/material";
 import fb from "../../assert/images/footer/fb.png";
 import discard from "../../assert/images/footer/discard.png";
@@ -20,12 +20,12 @@ const Footer = () => {
         }}
       >
         <Grid item md={5} className="footer_logo">
-          <img src={logo} alt="logo" width={300} />
+          <img src={logo} alt="logo" width={300} className="bottom_logo"/>
         </Grid>
 
         <Grid item md={4}>
           <Grid item md={2} className="align">
-            <Typography variant="h6" className="Pages">
+            <Typography variant="h6" className="Pages top">
               Pages
             </Typography>
           </Grid>
@@ -116,7 +116,7 @@ const Footer = () => {
         <Grid item md={3}>
           <Grid item md={1}>
             {" "}
-            <Typography variant="h6" className="Pages sociaRe">
+            <Typography variant="h6" className="Pages sociaRe top">
               Social
             </Typography>
           </Grid>
